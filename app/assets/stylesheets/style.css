@@ -1,9 +1,10 @@
- body {
+/* Default*/
+body {
     width: 100%;
     height: 100%;
     font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
     color: #FF6347;
-    background-color: #003478;
+    background-image: url("stardust.png");
 }
 html {
     width: 100%;
@@ -15,26 +16,26 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 15px;
+    margin: 0;
     text-transform: uppercase;
     font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
     font-weight: 700;
     letter-spacing: 1px;
 }
 p {
-    margin: 0 0 15px;
-    font-size: 18px;
+    margin: 0;
+    font-size: 20px;
     line-height: 1.5;
 }
 @media (min-width: 768px) {
     p {
-        margin: 0 0 15px;
-        font-size: 20px;
+        margin: 0;
+        font-size: 30px;
         line-height: 1.6;
     }
 }
 a {
-    color: #42DCA3;
+    color: tomato;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -46,18 +47,23 @@ a:focus {
 }
 .container {
     width: 560px;
+    margin: 0 auto;
 }
-.light {
-    font-weight: 400;
-}
+/* nav */
 nav::after {
     content: '';
     display: table;
     clear: both;
 }
-.navbar-header {
-    float: left;
+nav {
+    position: relative;
 }
+nav p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .navbar-collapse.collapse {
     display: block!important;
 }
@@ -78,7 +84,7 @@ nav::after {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
     font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .navbar-custom .navbar-toggle {
@@ -105,7 +111,7 @@ nav::after {
     transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: #a94442;
     outline: none;
     background-color: transparent;
 }
@@ -135,18 +141,21 @@ nav::after {
     }
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        background: black;
+        background: rgba(255, 255, 255, 0.8);
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
 }
+
+/* header */
 .intro {
     display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
+    width: 560px;
+    height: 250px !important;
+    padding: 60px 0;
+    margin: 0 auto;
     text-align: center;
     color: #FF6347;
-    background: url(intro-bg.jpg) no-repeat bottom center scroll;
+    background: inherit;
     background-color: #003478;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -160,64 +169,75 @@ nav::after {
 .intro .intro-body .brand-heading {
     font-size: 40px;
 }
-.intro .intro-body .intro-text {
-    font-size: 18px;
-}
 @media (min-width: 768px) {
     .intro {
-        height: 100%;
-        padding: 0;
+        height: 100px !important;
+        padding-top: 40px ;
+    }
+    .intro .intro-body {
+        display: table-cell;
+        vertical-align: middle;
     }
     .intro .intro-body .brand-heading {
-        font-size: 30px;
-    }
-    .intro .intro-body .intro-text {
-        font-size: 26px;
+        font-size: 50px;
+        padding-top: 30px !important;
     }
 }
+/*article*/
 
-header .container {
-    margin: 0 auto;
+section .container {
+    margin: 0 auto !important;
     display: flex;
     justify-content: space-between;
+    padding: 0;
 }
 .candidate_img img{
     width:100%;
     height:auto;
+    border-radius: 50%;
 }
-.background_line > img{
-    width:100%;
-    height:auto;
-}
-.candidate_img > div{
+.candidate_img div{
     width:16% !important;
     padding:0 0.5%;
 }
-header{
-    min-height:200vh;
-    background-color: #003478;
-}
-header h1 {
-    margin-top: 10%;
-    font-size: 30px;
-}
+
 /*timeline IN article*/
-header .background_line{
-    background-repeat: no-repeat;
-    background-position: center;
+article{
+    min-height:200vh;
+    background-image: url("stardust.png");
 }
+article .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+article .container img {
+    width: 100%;
+    height: auto;
+}
+article .container div {
+    width:16% !important;
+    padding:0 0.5%;
+}
+
 #timeline0899{
     background-image:url(timeline/time_verticlebar_0899.png);
+    background-position: center;
 }
 #timeline0900{
     background-image:url(timeline/time_verticlebar_0900.png);
+    background-position: center;
 }
 #timeline1000{
     background-image:url(timeline/time_verticlebar_1000.png);
+    background-position: center;
 }
 #timeline1100{
     background-image:url(timeline/time_verticlebar_1100.png);
+    background-position: center;
 }
+
 
 .btn-circle {
     width: 70px;
