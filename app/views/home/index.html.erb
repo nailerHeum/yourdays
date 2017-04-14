@@ -1,59 +1,200 @@
-
 <!-- Navigation -->
+<div class="container">
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-  <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-        Menu <i class="fa fa-bars"></i>
-      </button>
       <a class="navbar-brand page-scroll" href="#page-top">
-        <i class="fa fa-play-circle"></i> <span class="light">너의</span> 오늘은
+        <p>너의 오늘은</p>
       </a>
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+    <div class="collapse navbar-collapse navbar-right">
       <ul class="nav navbar-nav">
         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
         <li class="hidden">
           <a href="#page-top"></a>
         </li>
         <li>
-          <a class="page-scroll" href="#about"><i class="fa fa-question-circle fa-2x" aria-hidden="true"></i></a>
+          <a class="page-scroll" href="#download"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a class="page-scroll" href="#download"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></a>
+          <a class="page-scroll" href="#about"><i class="fa fa-question-circle fa-2x" aria-hidden="true"></i></a>
         </li>
         <li>
           <a class="page-scroll" href="#contact"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a>
         </li>
       </ul>
-    </div>
     <!-- /.navbar-collapse -->
   </div>
-  <!-- /.container -->
 </nav>
 
 <!-- Intro Header -->
 <header class="intro">
   <div class="intro-body">
-    <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <h1 class="brand-heading">Grayscale</h1>
-          <p class="intro-text">A free, responsive, one page Bootstrap theme.
-            <br>Created by Start Bootstrap.</p>
+          <h1 class="brand-heading">너의 오늘은</h1>
+            <div class="container candidate_img pt-3">
+              <div><%= image_tag("1Moon.jpg", alt: "문") %></div>
+              <div><%= image_tag("2Hong.jpg", alt: "홍") %></div>
+              <div><%= image_tag("3Ahn.jpg", alt: "안") %></div>
+              <div><%= image_tag("4Yoo.jpg", alt: "유") %></div>
+              <div><%= image_tag("5Sim.jpg", alt: "심") %></div>
+            </div>
+
+            <div class="container" id="timeline0899">
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+            </div>
+
+            <div class="container" id="timeline0900">
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+            </div>
+
+            <div class="container" id="timeline1000">
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+            </div>
+
+            <div class="container" id="timeline1100">
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+            </div>
+
+            <div class="container background_line" id="timeline1200">
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+            </div>
+
+            <div class="container background_line" id="timeline1300">
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+            </div>
+
+            <div class="container background_line" id="timeline1400">
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+            </div>
+
+            <div class="container background_line" id="timeline1500">
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+            </div>
+
+            <div class="container background_line" id="timeline1600">
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+            </div>
+
+            <div class="container background_line" id="timeline1700">
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+            </div>
+
+            <div class="container background_line" id="timeline1800">
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+            </div>
+
+            <div class="container background_line" id="timeline1900">
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+            </div>
+
+            <div class="container background_line" id="timeline2000">
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+            </div>
+
+            <div class="container background_line" id="timeline2100">
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+            </div>
+
+            <div class="container background_line" id="timeline2101">
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+              <div><%= image_tag("background_line.gif", alt: "배경") %></div>
+            </div>
+            <!--이 여백은 다른 내용으로 활용하는 게 좋을 것 같습니다 시간이 남네요(남는 이유: body 길이를 2페이지(200vh)로 고정함-->
+            <!--<div class="container background_line">-->
+            <!--  <div><%= image_tag("background_line.gif", alt: "배경") %></div>-->
+            <!--  <div><%= image_tag("background_line.gif", alt: "배경") %></div>-->
+            <!--  <div><%= image_tag("background_line.gif", alt: "배경") %></div>-->
+            <!--  <div><%= image_tag("background_line.gif", alt: "배경") %></div>-->
+            <!--  <div><%= image_tag("background_line.gif", alt: "배경") %></div>-->
+            <!--</div>-->
+
+            <!--<div class="container background_line">-->
+            <!--  <div><%= image_tag("background_line.gif", alt: "배경") %></div>-->
+            <!--  <div><%= image_tag("background_line.gif", alt: "배경") %></div>-->
+            <!--  <div><%= image_tag("background_line.gif", alt: "배경") %></div>-->
+            <!--  <div><%= image_tag("background_line.gif", alt: "배경") %></div>-->
+            <!--  <div><%= image_tag("background_line.gif", alt: "배경") %></div>-->
+            <!--</div>-->
+
+            <!--<div class="container background_line">-->
+            <!--  <div><%= image_tag("background_line.gif", alt: "배경") %></div>-->
+            <!--  <div><%= image_tag("background_line.gif", alt: "배경") %></div>-->
+            <!--  <div><%= image_tag("background_line.gif", alt: "배경") %></div>-->
+            <!--  <div><%= image_tag("background_line.gif", alt: "배경") %></div>-->
+            <!--  <div><%= image_tag("background_line.gif", alt: "배경") %></div>-->
+            <!--</div>-->
+
           <a href="#about" class="btn btn-circle page-scroll">
             <i class="fa fa-angle-double-down animated"></i>
           </a>
         </div>
       </div>
-    </div>
   </div>
 </header>
 
 <!-- About Section -->
-<section id="about" class="container content-section text-center">
+<section id="about" class="content-section text-center">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
       <h2>About Grayscale</h2>
@@ -67,18 +208,16 @@
 <!-- Download Section -->
 <section id="download" class="content-section text-center">
   <div class="download-section">
-    <div class="container">
-      <div class="col-lg-8 col-lg-offset-2">
+       <div class="col-lg-8 col-lg-offset-2">
         <h2>Download Grayscale</h2>
         <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
         <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
       </div>
-    </div>
   </div>
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="container content-section text-center">
+<section id="contact" class="content-section text-center">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
       <h2>Contact Start Bootstrap</h2>
@@ -100,13 +239,10 @@
   </div>
 </section>
 
-<!-- Map Section -->
-<div id="map"></div>
-
 <!-- Footer -->
 <footer>
-  <div class="container text-center">
+  <div class="text-center">
     <p>Copyright &copy; Your Website 2016</p>
   </div>
 </footer>
-
+</div>
